@@ -35,6 +35,7 @@ export default {
     width: 100%;
     padding: 15px 0 30px;
     border-bottom:10px solid #eee;
+    background-color: #fff;
   }
   .recommend-item{
     text-align: center;

@@ -213,6 +213,7 @@
   #hy-swiper {
     overflow: hidden;
     position: relative;
+    background-color: #fff;
 
   }
 

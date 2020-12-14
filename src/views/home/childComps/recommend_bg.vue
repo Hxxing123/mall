@@ -15,6 +15,7 @@ export default {
 <style>
   .recommend-bg{
     width: 100%;
+    background-color: #fff;
   }
   .recommend-bg-img{
     width: 100%;

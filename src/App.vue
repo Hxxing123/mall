@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view v-slot="{ Component }">
-      <keep-alive>
+      <keep-alive exclude="Detail">
         <component :is="Component" />
       </keep-alive>
     </router-view>
@@ -11,6 +11,7 @@
 
 <script>
 import MainTabBar from './components/content/MainTabBar'
+
 export default {
   name :"App",
   components: {
