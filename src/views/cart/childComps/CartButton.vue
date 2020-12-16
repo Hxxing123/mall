@@ -58,7 +58,7 @@ export default {
         },
         itemclick(){
             if(this.endCount==0){
-                this.$refs.toast.show('您还未添加到购物车，亲~',800)
+                this.$refs.toast.show('您还未添加到购物车,亲~',800)
             }else{
                 //console.log(this.endCount);
                 this.$refs.toast.show('正在开发中，敬请期待~',800)
