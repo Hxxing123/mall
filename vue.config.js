@@ -9,5 +9,9 @@ module.export = {
         'views': '@/views'
       }
     }
+  },
+  publicPath: './',
+  configureWebpack: {
+
   }
 }
