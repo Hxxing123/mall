@@ -1,5 +1,5 @@
 <template>
-  <div id="profile">
+  <div id="profile" @click="itemclick">
     <nav-bar class="profileTop">
       <template v-slot:center>
         <div>个人中心</div>
@@ -27,6 +27,7 @@
       </div>
     </section>
     <list-view></list-view>
+    <toast ref="toast"></toast>
   </div>
 </template>
 
@@ -34,11 +35,18 @@
 import NavBar from '@/components/common/navbar/NavBar.vue'
 import User from './childComps/User.vue'
 import ListView from './childComps/ListView.vue'
+import Toast from '@/components/common/toast/Toast.vue'
 export default {
   components: {
     NavBar,
     User,
-    ListView
+    ListView,
+    Toast
+  },
+  methods: {
+    itemclick(){
+      this.$refs.toast.show('正在开发中，敬请期待~',800)
+    }
   }
 }
 </script>

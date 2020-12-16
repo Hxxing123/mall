@@ -7,15 +7,18 @@
             <span>全选</span>
         </div>
         <span class="total-price">合计: ¥{{totalPrice}}</span>
-        <span class="buy-product">去计算({{endCount}})</span>
+        <span class="buy-product" @click="itemclick">去计算({{endCount}})</span>
+        <toast ref="toast"></toast>
     </div>
 </template>
 
 <script>
 import CheckButton from '@/components/content/check/CheckButton.vue'
+import Toast from '@/components/common/toast/Toast.vue'
 export default {
     components: {
-        CheckButton
+        CheckButton,
+        Toast
     },
     props: {
         cartList: {
@@ -51,6 +54,14 @@ export default {
                 this.cartList.forEach(item => item.checked = true)
             }else{
                 this.cartList.forEach(item => item.checked = false)
+            }
+        },
+        itemclick(){
+            if(this.endCount==0){
+                this.$refs.toast.show('您还未添加到购物车，亲~',800)
+            }else{
+                //console.log(this.endCount);
+                this.$refs.toast.show('正在开发中，敬请期待~',800)
             }
         }
     }
