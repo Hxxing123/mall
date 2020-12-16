@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
@@ -10,6 +10,5 @@ module.export = {
       }
     }
   },
-  publicPath: './',
-  baseUrl: './'
+  publicPath: './'
 }
