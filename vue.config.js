@@ -1,3 +1,4 @@
+const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -11,5 +12,5 @@ module.exports = {
       }
     }
   },
-  publicPath: process.env.VUE_APP_BASE_URL
+  publicPath: IS_PROD ? process.env.VUE_APP_PUBLIC_PATH : "./"
 }
