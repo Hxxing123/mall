@@ -4,7 +4,7 @@
       <img src="@/assets/img/profile/avatar.svg" alt="">
     </div>
     <div class="phone">
-      <div>登录/注册</div>
+      <div @click="goLogin">登录/注册</div>
       <div class="phoneD">
         <img src="@/assets/img/profile/phone.svg" alt="">
       </div>
@@ -18,6 +18,12 @@
 
 <script>
 export default {
+  name:"User",
+  methods: {
+    //goLogin(){
+      //this.$router.push("/login")
+    //}
+  }
 }
 </script>
 

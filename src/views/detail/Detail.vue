@@ -3,7 +3,7 @@
     <nav-bar>
       <template v-slot:left>
         <div @click="goBack">
-          <img src="@\assets\img\common\back.svg" alt="" class="back">
+          <img src="@/assets/img/common/back.svg" class="back">
         </div>
       </template>
       <template v-slot:center>
