@@ -96,7 +96,7 @@ export default {
     itemClick(index){
       this.currentIndex=index;
       //console.log(index)
-      this.$refs.scroll.scrollTo(0,-this.themeTopsY[index],100)
+      this.$refs.scroll.scrollTo(0,-(this.themeTopsY[index]+1),100)
     },
     goBack(){
       this.$router.back()
