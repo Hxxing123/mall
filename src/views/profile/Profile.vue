@@ -5,6 +5,8 @@
         <div>个人中心</div>
       </template>
     </nav-bar>
+
+  <scroll id="profile-scroll">
     <user></user>
     <section class="account">
       <div class="account-item">
@@ -27,7 +29,9 @@
       </div>
     </section>
     <list-view></list-view>
-    <toast ref="toast"></toast>
+    <div class="div1"></div>
+  </scroll>
+  <toast ref="toast"></toast>
   </div>
 </template>
 
@@ -36,12 +40,14 @@ import NavBar from '@/components/common/navbar/NavBar.vue'
 import User from './childComps/User.vue'
 import ListView from './childComps/ListView.vue'
 import Toast from '@/components/common/toast/Toast.vue'
+import Scroll from '@/components/common/scroll/Scroll.vue'
 export default {
   components: {
     NavBar,
     User,
     ListView,
-    Toast
+    Toast,
+    Scroll
   },
   methods: {
     itemclick(){
@@ -80,5 +86,13 @@ export default {
   }
   .account-info {
     margin-top: 6px;
+  }
+  .div1{
+    height: 500px;
+  }
+  .profile-scroll{
+    background-color: #f6f6f6;
+    height:  calc(100% - 44px - 49px);
+    width: 100%;
   }
 </style>

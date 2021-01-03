@@ -59,10 +59,10 @@ export default {
         margin-top: 18px;
     }
     .phonediv{
-      position: fixed;
-      font-size: 12px; 
-      top:94px;
-      left: 110px;
+      position: relative;
+      font-size: 12px;
+      top: -19px;
+      left: 23px;
     }
     .phone img{
         width: 10%;
@@ -71,4 +71,5 @@ export default {
     .phoneD {
         margin: 5px 0 0 -2px;
     }
+    
 </style>
